@@ -1,0 +1,130 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+#banner {
+	max-width: 100%;
+	max-height: 100%;
+	min-height: 100%;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-color: #dedede;
+}
+
+#banner .main-content {
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/banner/banner-homepages.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+#navbar {
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: flex;
+	flex-basis: 50%;
+}
+
+#navbar .box-logo {
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 5%;
+}
+
+#navbar .box-logo span {
+	font-weight: 1000;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #414141;
+}
+
+#navbar .box-menu {
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: auto;
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+}
+
+#navbar .box-menu ul {
+	width: 100%;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+#navbar .box-menu ul li {
+	list-style: none;
+	margin: auto;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #414141;
+}
+
+#navbar .box-menu ul li .subscribe {
+	padding: 10px 20px;
+	border: 1px solid #414141;
+}
+
+#navbar .box-menu ul li .subscribe:hover {
+	transition: 1s;
+	background-color: #8c8c8c;
+	color: #fff;
+	border: none;
+}
+
+#banner .main-content .text-content {
+	padding: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #414141;
+}
+
+#banner .main-content .text-content h1 {
+	font-size: 48px;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+#banner .main-content .text-content span {
+	text-transform: uppercase;
+	font-weight: 500;
+	position: relative;
+}
+
+#banner .main-content .text-content span:before {
+	content: '';
+	width: 50px;
+	height: 3px;
+	background-color: #414141;
+	position: absolute;
+	bottom: -100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
